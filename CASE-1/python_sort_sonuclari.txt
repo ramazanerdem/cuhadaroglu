@@ -1,0 +1,309 @@
+Test Sonuçları (Python):
+==================================================
+Test 1:
+  Input: [3, 2, 1, 5, 6, 4], k=2
+  Expected: 5
+  Built-in Sort: 5 ✓
+  Heap: 5 ✓
+  Merge Sort: 5 ✓
+  Quicksort: 5 ✓
+  Quickselect: 5 ✓
+
+Test 2:
+  Input: [3, 2, 3, 1, 2, 4, 5, 5, 6], k=4
+  Expected: 4
+  Built-in Sort: 4 ✓
+  Heap: 4 ✓
+  Merge Sort: 4 ✓
+  Quicksort: 4 ✓
+  Quickselect: 4 ✓
+
+Test 3:
+  Input: [1], k=1
+  Expected: 1
+  Built-in Sort: 1 ✓
+  Heap: 1 ✓
+  Merge Sort: 1 ✓
+  Quicksort: 1 ✓
+  Quickselect: 1 ✓
+
+Test 4:
+  Input: [7, 10, 4, 3, 20, 15], k=3
+  Expected: 10
+  Built-in Sort: 10 ✓
+  Heap: 10 ✓
+  Merge Sort: 10 ✓
+  Quicksort: 10 ✓
+  Quickselect: 10 ✓
+
+🎯 Python Performance Analizi
+======================================================================
+
+📊 Dizi boyutu: 100
+==================================================
+
+1. en büyük (k=1, %1.0)
+----------------------------------------
+Built-in Sort:  0.016ms
+Heap:           0.027ms
+Merge Sort:     0.204ms
+Quicksort:      0.147ms
+Quickselect:    0.022ms
+🏆 Kazanan:     Built-in Sort
+
+Ortadaki (k=50, %50.0)
+----------------------------------------
+Built-in Sort:  0.010ms
+Heap:           0.019ms
+Merge Sort:     0.143ms
+Quicksort:      0.096ms
+Quickselect:    0.026ms
+🏆 Kazanan:     Built-in Sort
+
+Son (en küçük) (k=100, %100.0)
+----------------------------------------
+Built-in Sort:  0.017ms
+Heap:           0.022ms
+Merge Sort:     0.224ms
+Quicksort:      0.163ms
+Quickselect:    0.031ms
+🏆 Kazanan:     Built-in Sort
+
+📊 Dizi boyutu: 1000
+==================================================
+
+1. en büyük (k=1, %0.1)
+----------------------------------------
+Built-in Sort:  0.177ms
+Heap:           0.199ms
+Merge Sort:     2.740ms
+Quicksort:      1.939ms
+Quickselect:    0.274ms
+🏆 Kazanan:     Built-in Sort
+
+Ortadaki (k=500, %50.0)
+----------------------------------------
+Built-in Sort:  0.155ms
+Heap:           0.347ms
+Merge Sort:     2.948ms
+Quicksort:      2.022ms
+Quickselect:    0.440ms
+🏆 Kazanan:     Built-in Sort
+
+Son (en küçük) (k=1000, %100.0)
+----------------------------------------
+Built-in Sort:  0.160ms
+Heap:           0.184ms
+Merge Sort:     2.518ms
+Quicksort:      2.005ms
+Quickselect:    0.190ms
+🏆 Kazanan:     Built-in Sort
+
+📊 Dizi boyutu: 10000
+==================================================
+
+1. en büyük (k=1, %0.0)
+----------------------------------------
+Built-in Sort:  2.099ms
+Heap:           1.847ms
+Merge Sort:     30.666ms
+Quicksort:      23.540ms
+Quickselect:    1.724ms
+🏆 Kazanan:     Quickselect
+
+Ortadaki (k=5000, %50.0)
+----------------------------------------
+Built-in Sort:  1.982ms
+Heap:           3.204ms
+Merge Sort:     31.393ms
+Quicksort:      23.195ms
+Quickselect:    3.761ms
+🏆 Kazanan:     Built-in Sort
+
+Son (en küçük) (k=10000, %100.0)
+----------------------------------------
+Built-in Sort:  2.036ms
+Heap:           1.666ms
+Merge Sort:     31.492ms
+Quicksort:      23.772ms
+Quickselect:    2.038ms
+🏆 Kazanan:     Heap
+
+📊 Dizi boyutu: 100000
+==================================================
+
+1. en büyük (k=1, %0.0)
+----------------------------------------
+Built-in Sort:  30.808ms
+Heap:           17.749ms
+Merge Sort:     456.213ms
+Quicksort:      347.032ms
+Quickselect:    27.261ms
+🏆 Kazanan:     Heap
+
+Ortadaki (k=50000, %50.0)
+----------------------------------------
+Built-in Sort:  31.914ms
+Heap:           60.046ms
+Merge Sort:     451.546ms
+Quicksort:      355.814ms
+Quickselect:    46.445ms
+🏆 Kazanan:     Built-in Sort
+
+Son (en küçük) (k=100000, %100.0)
+----------------------------------------
+Built-in Sort:  31.994ms
+Heap:           18.373ms
+Merge Sort:     437.807ms
+Quicksort:      334.299ms
+Quickselect:    24.547ms
+🏆 Kazanan:     Heap
+
+
+📋 JSON SONUÇLAR python_results.json dosyasına yazıldı.
+[
+  {
+    "language": "Python",
+    "size": 100,
+    "position": "1. en büyük",
+    "k": 1,
+    "builtinSort": 0.016,
+    "heap": 0.027,
+    "mergeSort": 0.204,
+    "quicksort": 0.147,
+    "quickselect": 0.022,
+    "fastest": "Built-in Sort"
+  },
+  {
+    "language": "Python",
+    "size": 100,
+    "position": "Ortadaki",
+    "k": 50,
+    "builtinSort": 0.01,
+    "heap": 0.019,
+    "mergeSort": 0.143,
+    "quicksort": 0.096,
+    "quickselect": 0.026,
+    "fastest": "Built-in Sort"
+  },
+  {
+    "language": "Python",
+    "size": 100,
+    "position": "Son (en küçük)",
+    "k": 100,
+    "builtinSort": 0.017,
+    "heap": 0.022,
+    "mergeSort": 0.224,
+    "quicksort": 0.163,
+    "quickselect": 0.031,
+    "fastest": "Built-in Sort"
+  },
+  {
+    "language": "Python",
+    "size": 1000,
+    "position": "1. en büyük",
+    "k": 1,
+    "builtinSort": 0.177,
+    "heap": 0.199,
+    "mergeSort": 2.74,
+    "quicksort": 1.939,
+    "quickselect": 0.274,
+    "fastest": "Built-in Sort"
+  },
+  {
+    "language": "Python",
+    "size": 1000,
+    "position": "Ortadaki",
+    "k": 500,
+    "builtinSort": 0.155,
+    "heap": 0.347,
+    "mergeSort": 2.948,
+    "quicksort": 2.022,
+    "quickselect": 0.44,
+    "fastest": "Built-in Sort"
+  },
+  {
+    "language": "Python",
+    "size": 1000,
+    "position": "Son (en küçük)",
+    "k": 1000,
+    "builtinSort": 0.16,
+    "heap": 0.184,
+    "mergeSort": 2.518,
+    "quicksort": 2.005,
+    "quickselect": 0.19,
+    "fastest": "Built-in Sort"
+  },
+  {
+    "language": "Python",
+    "size": 10000,
+    "position": "1. en büyük",
+    "k": 1,
+    "builtinSort": 2.099,
+    "heap": 1.847,
+    "mergeSort": 30.666,
+    "quicksort": 23.54,
+    "quickselect": 1.724,
+    "fastest": "Quickselect"
+  },
+  {
+    "language": "Python",
+    "size": 10000,
+    "position": "Ortadaki",
+    "k": 5000,
+    "builtinSort": 1.982,
+    "heap": 3.204,
+    "mergeSort": 31.393,
+    "quicksort": 23.195,
+    "quickselect": 3.761,
+    "fastest": "Built-in Sort"
+  },
+  {
+    "language": "Python",
+    "size": 10000,
+    "position": "Son (en küçük)",
+    "k": 10000,
+    "builtinSort": 2.036,
+    "heap": 1.666,
+    "mergeSort": 31.492,
+    "quicksort": 23.772,
+    "quickselect": 2.038,
+    "fastest": "Heap"
+  },
+  {
+    "language": "Python",
+    "size": 100000,
+    "position": "1. en büyük",
+    "k": 1,
+    "builtinSort": 30.808,
+    "heap": 17.749,
+    "mergeSort": 456.213,
+    "quicksort": 347.032,
+    "quickselect": 27.261,
+    "fastest": "Heap"
+  },
+  {
+    "language": "Python",
+    "size": 100000,
+    "position": "Ortadaki",
+    "k": 50000,
+    "builtinSort": 31.914,
+    "heap": 60.046,
+    "mergeSort": 451.546,
+    "quicksort": 355.814,
+    "quickselect": 46.445,
+    "fastest": "Built-in Sort"
+  },
+  {
+    "language": "Python",
+    "size": 100000,
+    "position": "Son (en küçük)",
+    "k": 100000,
+    "builtinSort": 31.994,
+    "heap": 18.373,
+    "mergeSort": 437.807,
+    "quicksort": 334.299,
+    "quickselect": 24.547,
+    "fastest": "Heap"
+  }
+]

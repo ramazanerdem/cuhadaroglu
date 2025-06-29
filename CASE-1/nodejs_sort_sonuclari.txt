@@ -1,0 +1,326 @@
+Test Sonuçları:
+==================================================
+Test 1:
+  Input: [3,2,1,5,6,4], k=2
+  Expected: 5
+  Built-in Sort: 5 ✓
+  Heap: 5 ✓
+  Merge Sort: 5 ✓
+  Quicksort: 5 ✓
+  Quickselect: 5 ✓
+  Adaptive: 5 ✓
+
+Test 2:
+  Input: [3,2,3,1,2,4,5,5,6], k=4
+  Expected: 4
+  Built-in Sort: 4 ✓
+  Heap: 4 ✓
+  Merge Sort: 4 ✓
+  Quicksort: 4 ✓
+  Quickselect: 4 ✓
+  Adaptive: 4 ✓
+
+Test 3:
+  Input: [1], k=1
+  Expected: 1
+  Built-in Sort: 1 ✓
+  Heap: 1 ✓
+  Merge Sort: 1 ✓
+  Quicksort: 1 ✓
+  Quickselect: 1 ✓
+  Adaptive: 1 ✓
+
+Test 4:
+  Input: [7,10,4,3,20,15], k=3
+  Expected: 10
+  Built-in Sort: 10 ✓
+  Heap: 10 ✓
+  Merge Sort: 10 ✓
+  Quicksort: 10 ✓
+  Quickselect: 10 ✓
+  Adaptive: 10 ✓
+
+🎯 Kapsamlı Sorting Performance Analizi
+======================================================================
+
+📊 Dizi boyutu: 100
+==================================================
+
+1. en büyük (k=1, %1.0)
+----------------------------------------
+Built-in Sort:  0.043ms
+Heap:           0.163ms
+Merge Sort:     0.279ms
+Quicksort:      0.289ms
+Quickselect:    0.054ms
+🏆 Kazanan:     Built-in Sort
+
+Ortadaki (k=50, %50.0)
+----------------------------------------
+Built-in Sort:  0.032ms
+Heap:           0.142ms
+Merge Sort:     0.154ms
+Quicksort:      0.025ms
+Quickselect:    0.012ms
+🏆 Kazanan:     Quickselect
+
+Son (en küçük) (k=100, %100.0)
+----------------------------------------
+Built-in Sort:  0.030ms
+Heap:           0.065ms
+Merge Sort:     0.198ms
+Quicksort:      0.019ms
+Quickselect:    0.007ms
+🏆 Kazanan:     Quickselect
+
+📊 Dizi boyutu: 1000
+==================================================
+
+1. en büyük (k=1, %0.1)
+----------------------------------------
+Built-in Sort:  0.327ms
+Heap:           0.414ms
+Merge Sort:     1.332ms
+Quicksort:      0.214ms
+Quickselect:    0.047ms
+🏆 Kazanan:     Quickselect
+
+Ortadaki (k=500, %50.0)
+----------------------------------------
+Built-in Sort:  0.258ms
+Heap:           0.863ms
+Merge Sort:     0.945ms
+Quicksort:      0.198ms
+Quickselect:    0.047ms
+🏆 Kazanan:     Quickselect
+
+Son (en küçük) (k=1000, %100.0)
+----------------------------------------
+Built-in Sort:  0.301ms
+Heap:           0.296ms
+Merge Sort:     1.098ms
+Quicksort:      0.222ms
+Quickselect:    0.036ms
+🏆 Kazanan:     Quickselect
+
+📊 Dizi boyutu: 10000
+==================================================
+
+1. en büyük (k=1, %0.0)
+----------------------------------------
+Built-in Sort:  4.344ms
+Heap:           2.383ms
+Merge Sort:     12.035ms
+Quicksort:      2.246ms
+Quickselect:    0.227ms
+🏆 Kazanan:     Quickselect
+
+Ortadaki (k=5000, %50.0)
+----------------------------------------
+Built-in Sort:  3.735ms
+Heap:           10.094ms
+Merge Sort:     9.465ms
+Quicksort:      2.124ms
+Quickselect:    0.321ms
+🏆 Kazanan:     Quickselect
+
+Son (en küçük) (k=10000, %100.0)
+----------------------------------------
+Built-in Sort:  3.190ms
+Heap:           2.074ms
+Merge Sort:     9.240ms
+Quicksort:      1.820ms
+Quickselect:    0.201ms
+🏆 Kazanan:     Quickselect
+
+📊 Dizi boyutu: 100000
+==================================================
+
+1. en büyük (k=1, %0.0)
+----------------------------------------
+Built-in Sort:  50.833ms
+Heap:           24.459ms
+Merge Sort:     115.707ms
+Quicksort:      29.180ms
+Quickselect:    4.117ms
+🏆 Kazanan:     Quickselect
+
+Ortadaki (k=50000, %50.0)
+----------------------------------------
+Built-in Sort:  47.127ms
+Heap:           121.142ms
+Merge Sort:     113.549ms
+Quicksort:      25.809ms
+Quickselect:    5.296ms
+🏆 Kazanan:     Quickselect
+
+Son (en küçük) (k=100000, %100.0)
+----------------------------------------
+Built-in Sort:  43.969ms
+Heap:           21.531ms
+Merge Sort:     103.875ms
+Quicksort:      25.359ms
+Quickselect:    3.606ms
+🏆 Kazanan:     Quickselect
+
+
+📋 JSON SONUÇLAR (Rapor için):
+======================================================================
+[
+  {
+    "size": 100,
+    "position": "1. en büyük",
+    "k": 1,
+    "kRatio": "1.0",
+    "builtinSort": 0.043,
+    "heap": 0.163,
+    "mergeSort": 0.279,
+    "quicksort": 0.289,
+    "quickselect": 0.054,
+    "fastest": "Built-in Sort",
+    "improvement": 5.351851851851851
+  },
+  {
+    "size": 100,
+    "position": "Ortadaki",
+    "k": 50,
+    "kRatio": "50.0",
+    "builtinSort": 0.032,
+    "heap": 0.142,
+    "mergeSort": 0.154,
+    "quicksort": 0.025,
+    "quickselect": 0.012,
+    "fastest": "Quickselect",
+    "improvement": 12.833333333333332
+  },
+  {
+    "size": 100,
+    "position": "Son (en küçük)",
+    "k": 100,
+    "kRatio": "100.0",
+    "builtinSort": 0.03,
+    "heap": 0.065,
+    "mergeSort": 0.198,
+    "quicksort": 0.019,
+    "quickselect": 0.007,
+    "fastest": "Quickselect",
+    "improvement": 28.285714285714285
+  },
+  {
+    "size": 1000,
+    "position": "1. en büyük",
+    "k": 1,
+    "kRatio": "0.1",
+    "builtinSort": 0.327,
+    "heap": 0.414,
+    "mergeSort": 1.332,
+    "quicksort": 0.214,
+    "quickselect": 0.047,
+    "fastest": "Quickselect",
+    "improvement": 28.340425531914896
+  },
+  {
+    "size": 1000,
+    "position": "Ortadaki",
+    "k": 500,
+    "kRatio": "50.0",
+    "builtinSort": 0.258,
+    "heap": 0.863,
+    "mergeSort": 0.945,
+    "quicksort": 0.198,
+    "quickselect": 0.047,
+    "fastest": "Quickselect",
+    "improvement": 20.106382978723403
+  },
+  {
+    "size": 1000,
+    "position": "Son (en küçük)",
+    "k": 1000,
+    "kRatio": "100.0",
+    "builtinSort": 0.301,
+    "heap": 0.296,
+    "mergeSort": 1.098,
+    "quicksort": 0.222,
+    "quickselect": 0.036,
+    "fastest": "Quickselect",
+    "improvement": 30.500000000000004
+  },
+  {
+    "size": 10000,
+    "position": "1. en büyük",
+    "k": 1,
+    "kRatio": "0.0",
+    "builtinSort": 4.344,
+    "heap": 2.383,
+    "mergeSort": 12.035,
+    "quicksort": 2.246,
+    "quickselect": 0.227,
+    "fastest": "Quickselect",
+    "improvement": 53.01762114537445
+  },
+  {
+    "size": 10000,
+    "position": "Ortadaki",
+    "k": 5000,
+    "kRatio": "50.0",
+    "builtinSort": 3.735,
+    "heap": 10.094,
+    "mergeSort": 9.465,
+    "quicksort": 2.124,
+    "quickselect": 0.321,
+    "fastest": "Quickselect",
+    "improvement": 31.445482866043612
+  },
+  {
+    "size": 10000,
+    "position": "Son (en küçük)",
+    "k": 10000,
+    "kRatio": "100.0",
+    "builtinSort": 3.19,
+    "heap": 2.074,
+    "mergeSort": 9.24,
+    "quicksort": 1.82,
+    "quickselect": 0.201,
+    "fastest": "Quickselect",
+    "improvement": 45.97014925373134
+  },
+  {
+    "size": 100000,
+    "position": "1. en büyük",
+    "k": 1,
+    "kRatio": "0.0",
+    "builtinSort": 50.833,
+    "heap": 24.459,
+    "mergeSort": 115.707,
+    "quicksort": 29.18,
+    "quickselect": 4.117,
+    "fastest": "Quickselect",
+    "improvement": 28.104687879523922
+  },
+  {
+    "size": 100000,
+    "position": "Ortadaki",
+    "k": 50000,
+    "kRatio": "50.0",
+    "builtinSort": 47.127,
+    "heap": 121.142,
+    "mergeSort": 113.549,
+    "quicksort": 25.809,
+    "quickselect": 5.296,
+    "fastest": "Quickselect",
+    "improvement": 22.874244712990933
+  },
+  {
+    "size": 100000,
+    "position": "Son (en küçük)",
+    "k": 100000,
+    "kRatio": "100.0",
+    "builtinSort": 43.969,
+    "heap": 21.531,
+    "mergeSort": 103.875,
+    "quicksort": 25.359,
+    "quickselect": 3.606,
+    "fastest": "Quickselect",
+    "improvement": 28.806156405990016
+  }
+]
