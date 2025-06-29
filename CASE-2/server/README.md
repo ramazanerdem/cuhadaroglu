@@ -1,4 +1,4 @@
-# 🔧 Backend Server - Node.js + Express + TypeScript
+# Backend Server - Node.js + Express + TypeScript
 
 ## Teknoloji Stack'i
 
@@ -47,7 +47,7 @@ npm start
 
 Server `http://localhost:3000` adresinde çalışacak.
 
-## 🌐 API Endpoints
+## API Endpoints
 
 ### Base URL
 

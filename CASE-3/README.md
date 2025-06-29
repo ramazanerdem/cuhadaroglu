@@ -140,7 +140,7 @@ const useDrawingState = () => {
 
 ```bash
 # Proje klonlama
-git clone [repository-url]
+git clone https://github.com/ramazanerdem/cuhadaroglu.git
 cd CASE-3
 
 # Bağımlılıkları yükleme

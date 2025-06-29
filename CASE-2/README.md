@@ -47,8 +47,8 @@ Modern React ve Node.js teknolojileri ile geliştirilmiş full stack ürün yön
 ### 2. Projeyi klonlayın
 
 ```bash
-git clone <repository-url>
-cd cuhadaroglu/CASE-2
+git clone https://github.com/ramazanerdem/cuhadaroglu.git
+cd CASE-2
 ```
 
 ### 3. Bağımlılıkları yükleyin (Terminalde CASE-2 klasörüne konumlandıktan sonra)
